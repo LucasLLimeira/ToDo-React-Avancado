@@ -1,0 +1,12 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list__empty {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  text-align: center;
+  padding: 2rem 0;
+  font-style: italic;
+}

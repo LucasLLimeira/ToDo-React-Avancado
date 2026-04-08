@@ -1,0 +1,62 @@
+.todo-filters {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1.5px solid var(--color-border);
+  padding-bottom: 1rem;
+}
+
+.todo-filters__btn {
+  flex: 1;
+  padding: 0.75rem 0.5rem;
+  background-color: transparent;
+  color: var(--color-text-muted);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+}
+
+.todo-filters__btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.todo-filters__btn--active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.todo-filters__btn--active:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  color: white;
+}
+
+.todo-filters__count {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Tablet and up */
+@media (min-width: 400px) {
+  .todo-filters__btn {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.375rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .todo-filters__count {
+    font-size: 0.8125rem;
+  }
+}
