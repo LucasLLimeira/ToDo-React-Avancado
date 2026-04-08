@@ -52,6 +52,6 @@
 }
 
 .todo-item__remove:hover {
-  background-color: #fee2e2;
+  background-color: var(--color-danger-soft);
   color: var(--color-danger);
 }
